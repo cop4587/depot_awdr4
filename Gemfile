@@ -28,6 +28,7 @@ group :development do
   # Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'pry-rails'
+  gem 'annotate'
 end
 
 
