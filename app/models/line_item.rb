@@ -7,12 +7,12 @@
 #  cart_id    :integer
 #  created_at :datetime
 #  updated_at :datetime
-#  quantity   :integer
+#  quantity   :integer          default(1)
+#  order_id   :integer
 #
 # Indexes
 #
-#  index_line_items_on_cart_id     (cart_id)
-#  index_line_items_on_product_id  (product_id)
+#  index_line_items_on_order_id  (order_id)
 #
 
 class LineItem < ActiveRecord::Base
