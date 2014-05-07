@@ -9,13 +9,11 @@
 #  updated_at :datetime
 #  quantity   :integer          default(1)
 #  order_id   :integer
-#
-# Indexes
-#
-#  index_line_items_on_order_id  (order_id)
+#  price      :decimal(8, 3)
 #
 
 class LineItem < ActiveRecord::Base
+  belongs_to :order
   belongs_to :product
   belongs_to :cart
 
